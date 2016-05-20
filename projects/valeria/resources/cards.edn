@@ -1,0 +1,60 @@
+[{:name "Cleric"
+  :base-cost 3
+  :hit #{1}
+  :you-payout   [:magic 3]
+  :other-payout [:magic 1]
+  :role :holy}
+ {:name "Merchant"
+  :base-cost 2
+  :hit #{2}
+  :you-payout   [:or [:gold 2] [:magic 2]]
+  :other-payout [:gold 1]
+  :role :worker}
+ {:name "Mercenary"
+  :base-cost 3
+  :hit #{3}
+  :you-payout   [:and [:gold 1] [:strength 1]]
+  :other-payout [:convert [:strength 1] [:gold 2]]
+  :role :shadow}
+ {:name "Archer"
+  :base-cost 4
+  :hit #{4}
+  :you-payout   [:strength 2]
+  :other-payout [:strength 1]
+  :role :soldier}
+ {:name "Peasant"
+  :base-cost "2"
+  :hit #{5}
+  :you-payout   [:gold 1]
+  :other-payout [:gold 1]
+  :role :worker}
+ {:name "Knight"
+  :base-cost 2
+  :hit #{6}
+  :you-payout   [:strength 1]
+  :other-payout [:strength 1]
+  :role :soldier}
+ {:name "Rogue"
+  :base-cost 2
+  :hit #{7}
+  :you-payout   [:and [:strength 2] [:gold 2]]
+  :other-payout [:and [:strength 1] [:gold 1]]
+  :role :shadow}
+ {:name "Champion"
+  :base-cost 2
+  :hit #{8}
+  :you-payout   [:strength 4]
+  :other-payout [:convert [:gold 1] [:strength 4]]
+  :role :soldier}
+ {:name "Paladin"
+  :base-cost 2
+  :hit #{9 10}
+  :you-payout   [:and [:strength 1] [:magic 2]]
+  :other-payout [:convert [:strength 1] [:magic 3]]
+  :role :holy}
+ {:name "Butcher"
+  :base-cost 1
+  :hit #{11 12}
+  :you-payout   [:* [:gold 2] :citizen]
+  :other-payout [:gold 4]
+  :role :worker}]
