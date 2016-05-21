@@ -1,4 +1,4 @@
-(ns training.exercises.ch01-find-the-cap)
+(ns training.exercises.ch01-find-the-gap)
 
 ;; Find the smallest natural number not in a given finite set of
 ;; natural numbers. Suppose the numbers are unsorted:
