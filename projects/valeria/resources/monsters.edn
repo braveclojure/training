@@ -1,0 +1,15 @@
+[{:name "Goblin"
+  :rewards        [:gold 1]
+  :hitpoints      1
+  :victory-points 1
+  :location       "Hills"}
+ {:name "Goblin Mage"
+  :rewards        [:or [:gold 1] [:magic 1]]
+  :hitpoints      3
+  :victory-points 2
+  :location       "Hills"}
+ {:name "Goblin King"
+  :rewards        [:* [:gold 1] :hill-monster]
+  :hitpoints      6
+  :victory-points 4
+  :location       "Hills"}]

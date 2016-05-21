@@ -5,7 +5,7 @@
             [valeria.odds :as odds])
   (:gen-class))
 
-(def cards (-> "cards.edn" io/resource slurp edn/read-string))
+(def cards (-> "citizens.edn" io/resource slurp edn/read-string))
 
 ;;=====
 ;; Odds of hitting card
