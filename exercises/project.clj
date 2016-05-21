@@ -7,4 +7,5 @@
                  [org.seleniumhq.selenium/selenium-java "2.53.0"]
                  [org.seleniumhq.selenium/htmlunit-driver "2.21"]
                  [cheshire "5.6.1"]
-                 [hiccup "1.0.5"]])
+                 [hiccup "1.0.5"]
+                 [prismatic/schema "1.1.1"]])

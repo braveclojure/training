@@ -26,9 +26,18 @@ map
 (eval (list '+ 1 2))
 
 (defn infix
-  [x op y]
+  [expr]
+  (let [x  (first expr)
+        op (second expr)
+        y  (last expr)]
+    (list op x y)))
+
+(eval (infix '(1 + 2)))
+
+;; aside: you can use destructuring
+(defn infix'
+  [[x op y]]
   (list op x y))
-(eval (infix 1 '+ 2))
 
 ;; Macros let you manipulate the data structures emitted by the reader,
 ;; sending the result to the evaluator
@@ -117,17 +126,17 @@ x
 ;; 3. macro arguments. When the macro is called,
 ;;   these arguments are unevaluated data.
 ;; 4. macro body - works exactly like a function body
-(defmacro infix
-  [x op y]
+(defmacro infix-m
+  [[x op y]]
   (list op x y))
 
 
 ;; Macros have to return a list. Why doesn't this work?
 (defmacro broken-infix
-  [x op y]
+  [[x op y]]
   (op x y))
 
-(broken-infix 1 + 2)
+(broken-infix (1 + 2))
 ;; This doesn't work because, in the macro body, you're applying `op`
 ;; to the `x` and `y`, not returning the list '(op x y). The return
 ;; value of the macro is ('+ 1 2), which attempts to apply the plus
@@ -139,7 +148,7 @@ x
 
 
 ;; Check macros with macroexpand and macroexpand-1:
-(macroexpand-1 '(broken-infix 1 + 2))
+(macroexpand-1 '(broken-infix (1 + 2)))
 (macroexpand-1 '(when true (pr "when") (pr "true")))
 
 ;; simple quoting
@@ -299,16 +308,17 @@ x
 ;; Bonus
 ;; `and` is a macro:
 
-(defmacro and
-  "Evaluates exprs one at a time, from left to right. If a form
+(comment
+  (defmacro and
+    "Evaluates exprs one at a time, from left to right. If a form
   returns logical false (nil or false), and returns that value and
   doesn't evaluate any of the other expressions, otherwise it returns
   the value of the last expr. (and) returns true."
-  {:added "1.0"}
-  ([] true)
-  ([x] x)
-  ([x & next]
-   `(let [and# ~x]
-      (if and# (and ~@next) and#))))
+    {:added "1.0"}
+    ([] true)
+    ([x] x)
+    ([x & next]
+     `(let [and# ~x]
+        (if and# (and ~@next) and#)))))
 
 ;; study it till you understand it, and optionally implement or as a macro
