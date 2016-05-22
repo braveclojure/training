@@ -21,6 +21,8 @@
         images)
 
 (sort [0 3 5 1])
+(reverse (sort [0 3 5 1]))
+
 (sort-by #(get-in % [:dims :w]) images)
 
 (reduce + [1 23 4])
@@ -28,9 +30,20 @@
         {}
         [{:height 10} {:width 20} {:depth 30}])
 
+(first [1 2 3])
+(rest [1 2 3])
+(conj [1 2 3] 4)
+(cons 4 [1 2 3])
+
+(first '(1 2 3))
+(rest '(1 2 3))
+(conj '(1 2 3) 4)
+(cons 4 '(1 2 3))
+
+;; slide time!
+
 ;; These functions can all be implemented in terms of first, rest, and
 ;; cons
-
 (defn filter'
   [pred xs]
   (if (empty? xs)
