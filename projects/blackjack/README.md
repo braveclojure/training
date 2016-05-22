@@ -86,3 +86,11 @@ If the player and dealer both have naturals, it's a tie and the player
 gets her money back.
 
 If the dealer gets a natural and the player doesn't, the dealer wins.
+
+## Hints
+
+Try to break this down into smaller parts as much as possible, and
+work on the smaller parts one at a time.
+
+If it's too much, try going through the provided solution and
+re-writing it in your own project. This is a great way to learn.
