@@ -13,15 +13,13 @@
   "Given a map representing a character, return a string that
   describes it in a way that's easy for humans to read"
   [{:keys [name attributes attribute-points]}]
-  (str "Name: " name "
-
-Attributes
-STR: " (:strength attributes) "
-INT: " (:intelligence attributes) "
-CHR: " (:charisma attributes) "
-DEX: " (:dexterity attributes) "
-
-Remaining attribute points: " attribute-points))
+  (str "Name: " name
+       "Attributes \n"
+       "STR: " (:strength attributes) "\n"
+       "INT: " (:intelligence attributes) "\n"
+       "CHR: " (:charisma attributes) "\n"
+       "DEX: " (:dexterity attributes) "\n"
+       "Remaining attribute points: " attribute-points))
 
 (defn assign-attribute-point
   "Updates the character map, adding one to the chosen attribute and
