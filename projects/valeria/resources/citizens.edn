@@ -23,7 +23,7 @@
   :other-payout [:strength 1]
   :role :soldier}
  {:name "Peasant"
-  :base-cost "2"
+  :base-cost 2
   :hit #{5}
   :you-payout   [:gold 1]
   :other-payout [:gold 1]
