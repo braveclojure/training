@@ -1,36 +1,12 @@
 # transform
 
-FIXME: description
+`core.clj` includes some example real-world code that shows how you
+might transform data after pulling it from the database.
 
-## Installation
+The code maps over "flights", records pulled from a database, using
+`process-flight` as the mapping function. `process-flight` just
+bundles together functions that process a specific aspect of the the
+flight, `format-flight-times` and `add-isfreqcap`.
 
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar transform-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+As it is, you can't run this code from the command line, but you can
+interact with it in a REPL.
