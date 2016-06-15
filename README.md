@@ -1,6 +1,6 @@
 # Intro to Clojure Training Materials
 
-[Learn more about Brave Clojure On-Site Training](http://www.braveclojure.com/training/)
+[**Learn more about Brave Clojure On-Site Training**](http://www.braveclojure.com/training/)
 
 Hello!
 
