@@ -12,10 +12,15 @@ during the workshop, or not - whatever helps you learn better.
 The [`exercises`](exercises) directory includes a Leiningen project
 that has all the code and exercises we'll be looking at during the
 lectures, as well as solutions under
-[`exercises/src/training/solutions`](exercises/src/training/solutions).
+[`exercises/src/training/solutions`](exercises/src/training/solutions). I
+recommend opening the `exercises` directory in your editor, connecting
+to a REPL, and trying the examples and exercises interactively.
 
 The [`projects`](projects) directory contains example implementations
-for the larger projects you'll be working on.
+for the larger projects you'll be working on. For self-study, first
+use `lein run` to see how the program is supposed to behave. Then try
+deleting individual functions and reimplementing them from scratch, or
+try reimplementing the entire project.
 
 Have fun!
 
