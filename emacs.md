@@ -1,3 +1,5 @@
+[Learn more about Brave Clojure On-Site Training](http://www.braveclojure.com/training/)
+
 ## Movement
 
 |Keys	 | Description |
