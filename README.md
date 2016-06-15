@@ -49,6 +49,8 @@ projects, and other resources:
   best books on learning how to think like a Lisp programmer.
 * [Clojure Applied](http://www.amazon.com/Clojure-Applied-Practitioner-Ben-Vandgrift/dp/1680500740/)
   is billed as a second book for Clojure, and I think it does a good job.
+* [The Clojure subreddit](https://www.reddit.com/r/clojure) is very
+  friendly and helpful, as is the [Clojure google group](https://groups.google.com/forum/#!forum/clojure).
 
 For projects, my advice is to think of something that you personally
 want to build, and try to build it. If you're interested in web
