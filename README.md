@@ -1,5 +1,7 @@
 # Intro to Clojure Training Materials
 
+[Learn more about Brave Clojure On-Site Training](http://www.braveclojure.com/training/)
+
 Hello!
 
 This repo contains all the examples, exercises, and projects we'll be
