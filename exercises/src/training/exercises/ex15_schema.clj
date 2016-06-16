@@ -4,7 +4,7 @@
 ;; ========================================
 ;; Schema
 ;; ========================================
-;; Clojaure is a dynamically typed languaged with limited support for
+;; Clojure is a dynamically typed languaged with limited support for
 ;; type checking by default. Schema helps fill this role. It doesn't
 ;; do type checking per se, but it helps you describe the shape of
 ;; data that functions expect and it validates that shape.
