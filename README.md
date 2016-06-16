@@ -57,4 +57,4 @@ want to build, and try to build it. If you're interested in web
 development, [Luminus](http://www.luminusweb.net/) is a good framework
 with good documentation.
 
-This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 license.](https://creativecommons.org/licenses/by-nc/4.0/
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 license.](https://creativecommons.org/licenses/by-nc/4.0/)
