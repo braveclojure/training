@@ -5,7 +5,7 @@
 ;;
 ;; Examples:
 ;; (odds 3 6 6) => 1/18
-;; (odds 3 4 4) => 1/6
+;; (odds 3 3 4) => 1/6
 ;;
 ;; In both these examples, 3 is the sum. The other two numbers are the
 ;; number of sides the dice have.
